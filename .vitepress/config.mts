@@ -9,6 +9,7 @@ export default defineConfig({
   lastUpdated: true,
   srcDir: './src',
   outDir: './docs',
+  base: '/parenting-notes/',
   srcExclude: ['**/README.md', '**/TODO.md'],
   head: [
     [
@@ -22,7 +23,7 @@ export default defineConfig({
     //   dark: '/logo-dark.png',
     //   alt: 'Thoughts & Tips on Parenting',
     // },
-    siteTitle: false,
+    siteTitle: 'Parenting Notes',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Documentation', link: '/introduction.md' }
