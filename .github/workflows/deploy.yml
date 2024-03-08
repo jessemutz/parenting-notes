@@ -21,7 +21,7 @@ permissions:
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   # Build job
@@ -47,8 +47,8 @@ jobs:
         run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with:
-          path: /.vitepress/dist
+        # with:
+        #   path: ./.vitepress/dist
 
   # Deployment job
   deploy:
