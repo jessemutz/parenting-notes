@@ -6,7 +6,7 @@ hero:
   name: "Thoughts & Tips on Parenting"
   text: ""
   tagline: Just some tips, tricks, thoughts, and best-practices that have worked for me, or have figured out through trial and error, as I figure out how to raise two girls.
-  image: /parenting.png
+  image: https://github.com/jessemutz/parenting-notes/blob/main/src/parenting.png?raw=true
   actions:
     - theme: brand
       text: Start reading
@@ -18,12 +18,12 @@ hero:
 features:
   - title: Something
     details: I'll probably add something here.
-    link: /
+    # link: /
   - title: Another thing
     details: Probably something else will go here as well.
-    link: /
+    # link: /
   - title: Third thing
     details: The brain likes things in groups of three!
-    link: /
+    # link: /
 ---
 
