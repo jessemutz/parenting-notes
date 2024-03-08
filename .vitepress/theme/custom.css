@@ -1,0 +1,35 @@
+.VPImage.image-src {
+  max-width: calc(100% - 40px);
+}
+
+.VPNavBarTitle .logo {
+  height: 100%;
+}
+
+.vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand-1);
+}
+
+.img-vision-overlay {
+  position: relative;
+  cursor: help;
+}
+
+.img-vision-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity .5s ease;
+  background: url("/assets/vision-normal.png") no-repeat center;
+  background-size: contain;
+}
+
+.img-vision-overlay:hover::before {
+  opacity: 1;
+}

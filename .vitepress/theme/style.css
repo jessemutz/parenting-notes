@@ -1,0 +1,256 @@
+/**
+ * Customize default theme styling by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+/**
+ * Colors
+ *
+ * Each colors have exact same color scale system with 3 levels of solid
+ * colors with different brightness, and 1 soft color.
+ * 
+ * - `XXX-1`: The most solid color used mainly for colored text. It must
+ *   satisfy the contrast ratio against when used on top of `XXX-soft`.
+ *
+ * - `XXX-2`: The color used mainly for hover state of the button.
+ *
+ * - `XXX-3`: The color for solid background, such as bg color of the button.
+ *   It must satisfy the contrast ratio with pure white (#ffffff) text on
+ *   top of it.
+ *
+ * - `XXX-soft`: The color used for subtle background such as custom container
+ *   or badges. It must satisfy the contrast ratio when putting `XXX-1` colors
+ *   on top of it.
+ *
+ *   The soft color must be semi transparent alpha channel. This is crucial
+ *   because it allows adding multiple "soft" colors on top of each other
+ *   to create a accent, such as when having inline code block inside
+ *   custom containers.
+ *
+ * - `default`: The color used purely for subtle indication without any
+ *   special meanings attched to it such as bg color for menu hover state.
+ *
+ * - `brand`: Used for primary brand colors, such as link text, button with
+ *   brand theme, etc.
+ *
+ * - `tip`: Used to indicate useful information. The default theme uses the
+ *   brand color for this by default.
+ *
+ * - `warning`: Used to indicate warning to the users. Used in custom
+ *   container, badges, etc.
+ *
+ * - `danger`: Used to show error, or dangerous message to the users. Used
+ *   in custom container, badges, etc.
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --n900: #000000;
+  --n600: #050B16;
+  --n500: #04182D;
+  --n400: #1D2C47;
+  --n300: #2F3B55;
+  --n200: #404B63;
+  --n100: #525B72;
+  --n90: #646C81;
+  --n80: #767D90;
+  --n70: #898F9F;
+  --n60: #9CA1AF;
+  --n50: #AFB3BF;
+  --n40: #C3C6CF;
+  --n30: #D7D9DF;
+  --n20: #EBEDF0;
+  --n10: #F2F4F6;
+  --n00: #FFFFFF;
+
+  --b300: #0D2156;
+  --b200: #143281;
+  --b100: oklch(42.74% 0.175 264.29);
+  --b80: #4969BD;
+  --b60: #768ECE;
+  --b40: #A4B4DE;
+  --b20: #D1D9EF;
+  --b00: oklch(46.47% 0.317 264.82);
+
+  --y400: #4C3200;
+  --y300: #805500;
+  --y200: #BF8000;
+  --y100: oklch(81.29% 0.192 73.79);
+  --y80: #FFBC33;
+  --y60: #FFCD66;
+  --y40: #FFDD99;
+  --y20: #FFEECC;
+
+  --r400: #46170D;
+  --r300: #742716;
+  --r200: #AD3B21;
+  --r100: #E84F2D;
+  --r80: #ED7257;
+  --r60: #F19581;
+  --r40: #F6B9AB;
+  --r20: #FADCD5;
+
+  --t400: #01323B;
+  --t300: #025563;
+  --t200: #037F95;
+  --t100: #05AAC7;
+  --t80: #37BBD2;
+  --t60: #69CCDD;
+  --t40: #9BDDE9;
+  --t20: #CDEEF4;
+
+  --g400: #0E3124;
+  --g300: #18523C;
+  --g200: #247B5A;
+  --g100: #31A579;
+  --g80: #5AB794;
+  --g60: #83C9AF;
+  --g40: #ADDBC9;
+  --g20: #D6EDE4;
+
+  --p400: #1B1733;
+  --p300: #2E2856;
+  --p200: #453B81;
+  --p100: #5D50AD;
+  --p80: #7D73BD;
+  --p60: #9E96CE;
+  --p40: #BEB9DE;
+  --p20: #DFDCEF;
+
+  --vp-c-default-1: var(--n100);
+  --vp-c-default-2: var(--n200);
+  --vp-c-default-3: var(--n300);
+  --vp-c-default-soft: var(--n500);
+
+  --vp-c-brand-1: var(--b100);
+  --vp-c-brand-2: var(--b200);
+  --vp-c-brand-3: var(--b300);
+  --vp-c-brand-soft: var(--vp-c-indigo-soft);
+
+  --vp-c-tip-1: var(--g100);
+  --vp-c-tip-2: var(--g200);
+  --vp-c-tip-3: var(--g300);
+  --vp-c-tip-soft: var(--g400);
+
+  --vp-c-warning-1: var(--vp-c-yellow-1);
+  --vp-c-warning-2: var(--vp-c-yellow-2);
+  --vp-c-warning-3: var(--vp-c-yellow-3);
+  --vp-c-warning-soft: var(--vp-c-yellow-soft);
+
+  --vp-c-danger-1: var(--r100);
+  --vp-c-danger-2: var(--r80);
+  --vp-c-danger-3: var(--r60);
+  --vp-c-danger-soft: var(--r300);
+
+  /**
+ * Component: Button
+ * -------------------------------------------------------------------------- */
+
+
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: var(--vp-c-white);
+  --vp-button-brand-bg: var(--vp-c-brand-3);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: var(--vp-c-white);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: var(--vp-c-white);
+  --vp-button-brand-active-bg: var(--vp-c-brand-1);
+
+
+  /**
+ * Component: Home
+ * -------------------------------------------------------------------------- */
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg in oklch,
+      var(--r100),
+      var(--b100) 95%);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg in oklch, var(--y100) 30%,
+      var(--b100));
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+
+/**
+ * Component: Custom Block
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-custom-block-tip-border: transparent;
+  --vp-custom-block-tip-text: var(--vp-c-text-1);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
+  --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
+}
+
+/**
+ * Component: Algolia
+ * -------------------------------------------------------------------------- */
+
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand-1) !important;
+}
+
+:root {
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: var(--n20);
+  --vp-c-bg-elv: var(--n30);
+  --vp-c-bg-soft: var(--n40);
+
+
+  --vp-c-text-1: var(--n500);
+  --vp-c-text-2: var(--n500);
+  --vp-c-text-3: var(--n600);
+
+  --vp-code-bg: var(--vp-c-bg-elv);
+
+  --vp-button-alt-text: var(--n00);
+  --vp-button-alt-active-text: var(--n00);
+  --vp-button-alt-hover-text: var(--n00);
+
+  --vp-font-family-base: 'Montserrat',
+    'Inter',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Helvetica,
+    Arial,
+    'Noto Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
+}
+
+.dark {
+  --vp-c-brand-1: var(--y100);
+  --vp-c-brand-2: var(--y200);
+  --vp-c-brand-3: var(--y300);
+
+  --vp-c-bg: var(--n600);
+  --vp-c-bg-alt: var(--n500);
+  --vp-c-bg-elv: var(--n400);
+  --vp-c-bg-soft: var(--n500);
+
+  --vp-c-text-1: var(--n20);
+  --vp-c-text-2: var(--n30);
+  --vp-c-text-3: var(--n50);
+
+
+
+}
