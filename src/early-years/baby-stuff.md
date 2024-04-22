@@ -1,4 +1,6 @@
 # Infant & Baby Stuff
+> Your life is now laundry.
+
 We like the concept of **Attachment parenting**. It's *not* helicopter parenting It's just meeting their needs. Everyone I know that follows this has AMAZING kids and a great relationship with them. It's very intuitive.
 
 Check out the [Baby book](https://www.amazon.com/Baby-Book-Revised-Everything-Parenting/dp/0316198269). The thesis is that your baby cries because it has a need. You meeting that need develops trust and a loving bond that you're there for them.
