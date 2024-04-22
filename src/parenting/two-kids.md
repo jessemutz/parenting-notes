@@ -1,8 +1,8 @@
 # Two Kids
 
-> One kid is one kid.
-> Two kids are 5 kids.
-> 3+ kids are 837 kids.
+> - One kid is one kid.
+> - Two kids are 5 kids.
+> - 3+ kids are 837 kids.
 
 The second baby is pretty easy. You remember just about everything except swaddling.
 
