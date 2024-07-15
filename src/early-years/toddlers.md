@@ -31,6 +31,13 @@ Use appropriate body terms. "I need to help you wipe your vulva," or "Some parts
 Try making things girls as well.
 
 ## Discipline
+> We don't discipline for mistakes, only rebellion.
+
+Mistakes are things like coloring on the walls, spilling things, hurting sibling due to negligence or not paying attention.
+
+Mistakes and rebellion both need connection and correction. But mistakes require teaching. e.g. "I see you colored on the wall. That is a beautiful drawing, but never do that again. We only color on paper."
+
+Kids literally don't know anything unless we teach them.
 
 ### Defiance
 
