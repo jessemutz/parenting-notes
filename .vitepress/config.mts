@@ -56,6 +56,10 @@ export default defineConfig({
             text: 'Two Kids',
             link: '/parenting/two-kids.md'
           },
+          {
+            text: 'Discipline',
+            link: '/parenting/discipline.md'
+          },
         ]
       },
       {
@@ -70,7 +74,7 @@ export default defineConfig({
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/jessemutz/parenting-notes' },
-      { icon: 'instagram', link: 'https://instagram.com/jessemutz'}
+      { icon: 'instagram', link: 'https://instagram.com/jessemutz' }
     ]
   }
 })
