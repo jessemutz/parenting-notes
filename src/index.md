@@ -16,14 +16,14 @@ hero:
     #   link: /downloads
 
 features:
-  - title: Something
-    details: I'll probably add something here.
-    # link: /
-  - title: Another thing
-    details: Probably something else will go here as well.
-    # link: /
-  - title: Third thing
-    details: The brain likes things in groups of three!
-    # link: /
+  - title: About this guide
+    details: What is this guide and to whom is it written?
+    link: /introduction
+  - title: Parenting
+    details: Tips and tricks on parenting babies, toddlers, and small kids. This worked for us.
+    link: /parenting/parenting
+  - title: Advice for Daughters
+    details: Just some advice, quotes, and words of wisdom for my two girls as they get older.
+    link: /daughters/future-notes-for-daughters
 ---
 
